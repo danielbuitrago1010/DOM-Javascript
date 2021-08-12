@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo DOM con javascript</title>
+  </head>
+  <!-- <script>va despues de los elementos -->
+  <body>
+    <h1 id="cabecero">Ejemplo dom javascript</h1>
+    <p id="parrafo1">Saludos</p>
+    <p id="parrafo2">Otro parrafo</p>
+    <script>
+        let parrafos = document.getElementsByTagName('p');
+        console.log(`No. parrafos: ${parrafos.length}`);
+        for (let i = 0; i < parrafos.length; i++) {
+           console.log(`i: ${i} - ${parrafos[i].innerHTML}`);
+            
+        }
+    //   let cabecero = document.getElementById("cabecero");
+    //   console.log(`cabecero : ${cabecero.innerHTML}`);
+    //   cabecero.innerHTML = "cambio de cabecero";
+    //   let parrafo = document.getElementById("parrafo");
+    //   console.log(`parrafo :  ${parrafo.innerHTML}`);
+
+    //   console.log("saludos desde javascript");
+    
+    </script>
+  </body>
+</html>
